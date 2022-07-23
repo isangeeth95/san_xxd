@@ -44,14 +44,14 @@ $ mkdir -p /root/xxd
 
 * **index.txt** is a general file which contains ASCII characters. You can use any ASCII content as your input file as your wish.  
 ```
-$cat index.txt
+$ cat index.txt
 A mother is the female parent of a child. Mothers are women who inhabit or perform the role of bearing some relation to their children, who may or may not be their biological offspring. Thus, dependent on the context, women can be considered mothers by virtue of having given birth, by raising their child(ren), supplying their ovum for fertilisation, or some combination thereof. Such conditions provide a way of delineating the concept of motherhood, or the state of being a mother.
 ```
 
 * if you want to give a input file which is having a name except **index.txt**, then open the **san_xxd.c** file, find below line & replace index.txt to the new name. 
 
 ```
-	file = fopen ("index.txt", "r");
+file = fopen ("index.txt", "r");
 ```
 
 ### Executing program
@@ -72,19 +72,22 @@ $ ls -ltr
 ```
 ![image](https://user-images.githubusercontent.com/36575796/180618947-686ea6be-1a6d-4b16-9d67-fbd1f8cf116a.png)
 
-### Output of the executable a.out 
+#### Output of the executable a.out 
 
 ![image](https://user-images.githubusercontent.com/36575796/180618949-b8e2bd4a-ea5b-4a6d-864f-09f6a2864c10.png)
 
+## Limitations
+
+If you checked the real xxd output and san_xxd ouputs carefully, you will find that san_xxd will not be reading the input stream to it's last byte. I was unable to address that limitation. 
+
+## Future work
+
+Further, this code should be modified to gives the exact output as xxd does by reading the input text file contents to the last byte. Finally, as xxd does this should be modified to convert a hex dump back to its original binary form as well.
 
 ## Authors
 
 * Sangeeth Sankalpa  
 [@sangeeth-sankalpa](https://linkedin.com/in/sangeeth-sankalpa)
-
-## Future work
-
-Further, this code should be modified to gives the exact output as xxd does by reading the input text file contents to the last byte. Finally, as xxd does this should be modified to convert a hex dump back to its original binary form as well.
 
 ## Acknowledgments
 
