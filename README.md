@@ -8,7 +8,7 @@ Make a hexdump as we get in xxd using my own C program
 
 ## Description
 
-In earlier days when I started studying programming this challange was given to me by one of my mentors to advance my coding skills. Challange was to write a C program which gives you the exact output as **xxd** command utility does with a input file. At that time I didn't even know what xxd command utility does.  
+When I started studying programming in my earlier days, this challange was given to me by one of my mentors to advance my coding skills. Challange was to write a C program which gives you the exact output as **xxd** command utility does with a input file. At that time I didn't even know what xxd command utility does.  
 
 xxd command does two things. It creates a hex dump of a given file or standard input and It can also convert a hex dump back to its original binary form.
 [Read more about xxd from the manual](https://linux.die.net/man/1/xxd)
@@ -78,7 +78,8 @@ $ ls -ltr
 
 ## Limitations
 
-If you checked the real xxd output and san_xxd ouputs carefully, you will find that san_xxd will not be reading the input stream to it's last byte. I was unable to address that limitation. 
+* If you checked the real xxd output and san_xxd ouputs carefully, you will find that san_xxd will not be reading the input stream to it's last byte. I was unable to address that limitation. 
+* Input file is not be given as a command line parameter. Code should be modified to accept the input file as a paramater. 
 
 ## Future work
 
