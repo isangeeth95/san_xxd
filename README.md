@@ -1,10 +1,10 @@
 # san_xxd
 Make a hexdump as we get in xxd using my own C program
 
-##### Screenshots of the active status of both AV services
-![image](https://user-images.githubusercontent.com/36575796/175768354-5252671e-7ff8-4d00-aa51-62278df80ed5.png)
+##### xxd output vs san_xxd output
 
-![image](https://user-images.githubusercontent.com/36575796/175768367-cb8bda2b-500a-417e-81a3-90c07b1e0dae.png)
+![image](https://user-images.githubusercontent.com/36575796/180617901-4d515a0b-3cf3-4ecf-b365-5fb8693e13c9.png)
+
 
 ## Description
 
