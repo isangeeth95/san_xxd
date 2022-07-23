@@ -11,7 +11,7 @@ Make a hexdump as we get in xxd using my own C program
 In earlier days when I started studying programming this challange was given to me by one of my mentors to advance my coding skills. Challange was to write a C program which gives you the exact output as **xxd** command utility does with a input file. At that time I didn't even know what xxd command utility does.  
 
 xxd command does two things. It creates a hex dump of a given file or standard input and It can also convert a hex dump back to its original binary form.
-Read more about xxd manual from [here]([https://github.com/zathizh](https://linux.die.net/man/1/xxd))
+[Read more about xxd from the manual](https://linux.die.net/man/1/xxd)
 
 ## Getting Started
 
@@ -48,12 +48,22 @@ $cat index.txt
 A mother is the female parent of a child. Mothers are women who inhabit or perform the role of bearing some relation to their children, who may or may not be their biological offspring. Thus, dependent on the context, women can be considered mothers by virtue of having given birth, by raising their child(ren), supplying their ovum for fertilisation, or some combination thereof. Such conditions provide a way of delineating the concept of motherhood, or the state of being a mother.
 ```
 
+* if you want to give a input file which is having a name except **index.txt**, then open the **san_xxd.c** file, find below line & replace index.txt to the new name. 
+
+```
+	file = fopen ("index.txt", "r");
+```
+
 ### Executing program
 
 ```
 $ gcc san_xxd.c
 ```
 ![image](https://user-images.githubusercontent.com/36575796/180618919-a608a418-3807-495e-bacf-87bd5880e5b9.png)
+
+```
+$ ls -ltr
+```
 
 ![image](https://user-images.githubusercontent.com/36575796/180618926-06bd8660-1687-49e7-8bb9-6d50c44c9a98.png)
 
@@ -62,6 +72,7 @@ $ gcc san_xxd.c
 ```
 ![image](https://user-images.githubusercontent.com/36575796/180618947-686ea6be-1a6d-4b16-9d67-fbd1f8cf116a.png)
 
+### Output of the executable a.out 
 
 ![image](https://user-images.githubusercontent.com/36575796/180618949-b8e2bd4a-ea5b-4a6d-864f-09f6a2864c10.png)
 
